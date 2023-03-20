@@ -5,11 +5,13 @@ import Header from "./../components/Header";
 import { Column, Row } from "../components/common";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import BlogsSection from "../components/BlogsSection";
+
+const FilterTagsArray = ["All", "Recent", "Education", "Health"];
 
 const Home = ({ page, navigation, settings }) => {
   const [homepageData, setHomepageData] = useState();
   const [blogListData, setBlogListData] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
   const bloglistArray = [];
   const [allData, setAllData] = useState();
 
@@ -21,9 +23,8 @@ const Home = ({ page, navigation, settings }) => {
     setBlogListData(page);
   }, [page]);
 
-  const handleFilter = (value) => {
-    debugger;
-    console.log(page);
+  const handleFilter = (value, index) => {
+    setActiveIndex(index);
     let allBlogPostData = page;
     let matchedTags = allBlogPostData.map((item, i) => {
       debugger;
@@ -61,8 +62,19 @@ const Home = ({ page, navigation, settings }) => {
         }
       })}
 
-      <Row style={{ margin: "30px 0 30px" }}>
-        <span
+      <Row style={{ margin: "30px 0 30px" }} className={"filter_tags_wrapper"}>
+        {FilterTagsArray.map((item, index) => (
+          <span
+            className={`unselected_blog_stories ${
+              activeIndex === index ? "tag_active" : ""
+            }`}
+            onClick={() => handleFilter(item.toLowerCase(), index)}
+          >
+            {item}
+          </span>
+        ))}
+
+        {/* <span
           className={"unselected_blog_stories"}
           onClick={() => handleFilter("all")}
         >
@@ -85,7 +97,7 @@ const Home = ({ page, navigation, settings }) => {
           onClick={() => handleFilter("health")}
         >
           {"Health"}
-        </span>
+        </span> */}
       </Row>
 
       {blogListData.map((data, i) => {

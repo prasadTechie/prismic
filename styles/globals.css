@@ -73,6 +73,9 @@
   }
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600&display=swap');
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -107,7 +110,8 @@ a {
   }
 }
 
-html, body {
+html,
+body {
   background-color: #fff;
   /* background-image: linear-gradient(rgb(95, 18, 150), rgb(43, 21, 113)); */
   color: rgb(0, 0, 0);
@@ -125,4 +129,8 @@ html, body {
   font-size: 12px;
   line-height: 20px;
   z-index: 100;
+}
+
+.filter_tags_wrapper span {
+  font-family: 'Urbanist';
 }

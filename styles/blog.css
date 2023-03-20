@@ -35,15 +35,10 @@
   margin-top: 12px;
 }
 
-.selected_blog_stories {
-  height: 41px;
-  padding: 0 10px;
-  border-radius: 27px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  color: #571990;
-  background: #ffffff;
+.tag_active {
+  background-color: transparent !important;
+  color: #fff !important;
+
 }
 
 .unselected_blog_stories {
@@ -100,7 +95,7 @@
 }
 
 .story_subtitle {
-
+  font-family: 'Urbanist';
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;

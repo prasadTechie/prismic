@@ -30,7 +30,7 @@
 }
 
 .shorts_subtitle {
-
+  font-family: 'Urbanist';
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -39,10 +39,10 @@
 }
 
 .shorts_body_text {
-
+  font-family: 'Urbanist';
   font-weight: 500;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .slider_body {
@@ -80,7 +80,7 @@
   padding-left: 20px;
   border-radius: 10px;
   margin-top: 18px;
-
+  font-family: 'Urbanist';
   font-weight: 700;
   font-size: 16px;
   color: #222222;
@@ -171,7 +171,7 @@
 }
 
 .poll_button_voted_not_sure {
-
+  font-family: 'Urbanist';
   font-weight: 700;
   font-size: 18px;
   color: #571990;
@@ -181,7 +181,7 @@
 .vote_percentage {
   font-weight: 700;
   font-size: 18px;
-
+  font-family: 'Urbanist';
   color: #5f1296;
   margin-left: 12px;
 }
@@ -217,7 +217,7 @@
 }
 
 .validate_acc_section span {
-
+  font-family: 'Urbanist';
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -225,7 +225,7 @@
 }
 
 .validate_acc_section p {
-
+  font-family: 'Urbanist';
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
@@ -243,7 +243,7 @@
   align-self: center;
   font-weight: 700;
   font-size: 14px;
-
+  font-family: 'Urbanist';
   text-align: center;
   color: #ffffff;
   margin-top: 20px;
@@ -275,7 +275,7 @@
 }
 
 .poll_participate_subtitle {
-
+  font-family: 'Urbanist';
   font-weight: 500;
   font-size: 13px;
   text-align: center;
@@ -299,7 +299,7 @@
 .time_shorts_views_text {
   font-size: 12px;
   color: white;
-
+  font-family: 'Urbanist';
   font-weight: 400;
 }
 
@@ -344,7 +344,7 @@
   border-radius: 27px;
   padding: 0px 12px;
   font-size: 12px;
-
+  font-family: 'Urbanist';
   font-weight: 500;
   color: white;
   cursor: pointer;
@@ -357,7 +357,7 @@
   background: #561990;
   border-radius: 27px;
   font-size: 12px;
-
+  font-family: 'Urbanist';
   font-weight: 500;
   color: white;
   cursor: pointer;
@@ -366,7 +366,7 @@
 
 .footer_share_section {
   font-size: 12px;
-
+  font-family: 'Urbanist';
   font-weight: 500;
   cursor: pointer;
 }

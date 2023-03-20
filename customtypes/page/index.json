@@ -33,12 +33,6 @@
             },
             "footer": {
               "type": "SharedSlice"
-            },
-            "comment_modal": {
-              "type": "SharedSlice"
-            },
-            "polling": {
-              "type": "SharedSlice"
             }
           }
         }

@@ -3,8 +3,8 @@ import { PrismicRichText } from "@prismicio/react";
 import { Column, Row } from "../../components/common";
 import { WhatsappShareButton } from "next-share";
 import { useState, useEffect } from "react";
-import CommentModalSlice from "../CommentModal";
 import styled from "styled-components";
+import Modal from "react-modal/lib/components/Modal";
 
 /**
  * @typedef {import("@prismicio/client").Content.FooterSlice} FooterSlice
@@ -76,11 +76,14 @@ const Footer = ({ slice }) => {
   }, [liked]);
 
   const handleModal = (boolean) => {
+    console.log(boolean, "boolean value");
+    debugger;
     setIsModalVisible(boolean);
   };
 
   return (
     <>
+      {console.log(slice, "footer data")}
       <Row className="footer_section">
         <Row className="footer_like_section" onClick={handleLike}>
           {liked ? (
@@ -125,7 +128,48 @@ const Footer = ({ slice }) => {
         </WhatsappShareButton>
       </Row>
 
-      <CommentModalSlice open={isModalVisible} />
+      <>
+        {isModalVisible ? (
+          <Modal
+            isOpen={isModalVisible}
+            style={{
+              content: {
+                width: "300px",
+                transform: "translate(-50%, -50%)",
+                border: `none`,
+                inset: "auto 50% 0",
+                borderRadius: "10px",
+                background: "white",
+                overflowX: "hidden",
+              },
+              overlay: {
+                background: "#00000099",
+                zIndex: 100,
+                overflowY: "auto",
+                // backdropFilter: "blur(1px)",
+              },
+            }}
+          >
+            <Column className="validate_acc_section">
+              <img
+                src={slice?.primary?.puzzle_image?.url}
+                className="puzzle_heart"
+                alt={slice?.primary?.puzzle_image?.alt}
+              />
+              <span>{slice?.primary?.title[0].text}</span>
+              <p>{slice?.primary?.description[0].text}</p>
+              <button
+                className="validate_acc_btn"
+                onClick={() => setIsModalVisible(false)}
+              >
+                Please validate my account
+              </button>
+            </Column>
+          </Modal>
+        ) : (
+          ""
+        )}
+      </>
     </>
   );
 };

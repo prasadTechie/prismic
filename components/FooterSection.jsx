@@ -72,7 +72,7 @@ const FooterSection = ({ slice }, handleModal) => {
 
   return (
     <>
-      <Row className="footer_section">
+      {/* <Row className="footer_section">
         <Row className="footer_like_section" onClick={handleLike}>
           {liked ? (
             <img
@@ -114,7 +114,7 @@ const FooterSection = ({ slice }, handleModal) => {
             <span>12 share</span>
           </Row>
         </WhatsappShareButton>
-      </Row>
+      </Row> */}
     </>
   );
 };

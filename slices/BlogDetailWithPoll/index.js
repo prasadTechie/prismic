@@ -8,8 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 // import VaccinatePoll from "../../pages/Shorts/components/VaccinatePoll";
 import { WhatsappShareButton } from "next-share";
-import Footer from "./../Footer";
-import CommentModal from "../CommentModal";
 import Modal from "react-modal";
 import Link from "next/link";
 
@@ -296,47 +294,6 @@ const BlogDetailWithPoll = ({ slice }) => {
           </div>
         ))}
       </Slider>
-      <Footer setCommentIconClicked={handleModal} />
-      {commentIconClicked ? (
-        <Modal
-          isOpen={commentIconClicked}
-          style={{
-            content: {
-              width: "300px",
-              transform: "translate(-50%, -50%)",
-              border: `none`,
-              inset: "auto 50% 0",
-              borderRadius: "10px",
-              background: "white",
-              overflowX: "hidden",
-            },
-            overlay: {
-              background: "#00000099",
-              zIndex: 100,
-              overflowY: "auto",
-              // backdropFilter: "blur(1px)",
-            },
-          }}
-        >
-          <Column className="validate_acc_section">
-            {/* <img
-            src={slice?.primary.modal_top_image.url}
-            className="puzzle_heart"
-            alt={slice?.primary.modal_top_image.alt}
-          /> */}
-            <span>Comment validation</span>
-            <p>
-              We take utmost care to ensure the comments are gentle & sensible.
-              For that we check all accounts carefully.
-            </p>
-            <button className="validate_acc_btn" onClick={() => setOpen(false)}>
-              Please validate my account
-            </button>
-          </Column>
-        </Modal>
-      ) : (
-        ""
-      )}
     </Column>
   );
 };

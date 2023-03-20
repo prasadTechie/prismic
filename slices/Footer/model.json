@@ -68,6 +68,14 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "puzzle_image": {
+          "type": "Image",
+          "config": {
+            "label": "Puzzle Image",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {},
