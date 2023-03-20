@@ -1,0 +1,105 @@
+{
+  "id": "blog_lists",
+  "type": "SharedSlice",
+  "name": "BlogLists",
+  "description": "BlogLists",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BlogLists",
+      "primary": {
+        "blog_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "blog label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "blogthumbnail": {
+          "type": "Image",
+          "config": {
+            "label": "BlogThumbnail",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "blogtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "BlogTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "blogshortdescription": {
+          "type": "Text",
+          "config": {
+            "label": "BlogShortDescription",
+            "placeholder": ""
+          }
+        },
+        "clockicon": {
+          "type": "Image",
+          "config": {
+            "label": "ClockIcon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "time": {
+          "type": "Text",
+          "config": {
+            "label": "Time",
+            "placeholder": ""
+          }
+        },
+        "shortsicon": {
+          "type": "Image",
+          "config": {
+            "label": "ShortsIcon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "shortscount": {
+          "type": "Text",
+          "config": {
+            "label": "ShortsCount",
+            "placeholder": ""
+          }
+        },
+        "blog_link": {
+          "type": "Link",
+          "config": {
+            "label": "blog link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "content_link": {
+          "type": "Link",
+          "config": {
+            "label": "content link",
+            "select": "document"
+          }
+        },
+        "blog_link_cta": {
+          "type": "Text",
+          "config": {
+            "label": "blog link CTA",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "pages": {
+    "/[uid]": [],
+    "/slice-simulator": [],
+    "/": []
+  },
+  "app": {},
+  "appUsingSizeAdjust": false,
+  "pagesUsingSizeAdjust": false
+}

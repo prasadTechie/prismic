@@ -1,0 +1,65 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "question_label": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Et pariatur pariatur velit amet proident id est occaecat amet sunt commodo deserunt laborum. Culpa irure consectetur proident voluptate dolore Lorem non nostrud ut ullamco non. Enim eiusmod minim consectetur ex sunt."
+            }
+          }
+        ]
+      },
+      "question": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nostrud quis reprehenderit adipisicing in quis. Ut anim veniam reprehenderit magna nostrud proident nulla non do veniam eiusmod ullamco. Sunt ad qui fugiat enim reprehenderit exercitation eu."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "question",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Quis elit reprehenderit consectetur in."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "answer",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Anim pariatur magna qui ullamco nostrud velit voluptate magna. Consectetur fugiat officia proident laboris ut mollit in aliqua consequat magna dolore labore commodo aute consectetur."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

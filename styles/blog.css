@@ -1,0 +1,369 @@
+.header_img {
+  width: 100%;
+  height: 54px;
+}
+
+.back_btn {
+  width: 52px;
+  height: 50px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 1;
+}
+
+.safe_kids {
+  width: 104px;
+  height: 30px;
+  background: #5f1296;
+  border-radius: 0px 0px 0px 5px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.header_title {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.selected_blog_stories {
+  height: 41px;
+  padding: 0 10px;
+  border-radius: 27px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #571990;
+  background: #ffffff;
+}
+
+.unselected_blog_stories {
+  height: 41px;
+  padding: 0 10px;
+  border: 1px solid white;
+  border-radius: 27px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5f1296;
+  background: #fff4f4;
+  line-height: 39px;
+  width: 100px;
+  margin: 0 5px;
+}
+
+.selected_blog_stories_line {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(110.03deg, #ffab00 36.7%, #e95a08 115.2%);
+  border-radius: 10px;
+  margin-top: -4px;
+}
+
+.no_of_stories {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffb001;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.blog_section {
+  border-radius: 10px;
+  background-color: white;
+  padding: 8px;
+}
+
+.story_img {
+  width: 100%;
+  /* height: 100px; */
+  /* margin-right: 16px; */
+  align-self: center;
+}
+
+.story_title {
+  font-family: "Arial Rounded MT Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ff7400;
+}
+
+.story_subtitle {
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  margin: 8px 0;
+}
+
+.clock_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.shorts_icon {
+  width: 14px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.views_icon {
+  width: 16px;
+  height: 13px;
+}
+
+.time_shorts {
+  font-size: 12px;
+
+  font-weight: 500;
+  color: #ff7400;
+}
+
+
+@media only screen and (min-width:768px) {
+  .header_img {
+    height: 100px;
+  }
+
+  .back_btn {
+    bottom: -3px;
+  }
+}
+
+.shorts_img {
+  width: 100%;
+}
+
+.shorts_body_section {
+  /* height: 500px; */
+  /* padding: 16px 0; */
+  /* background: white; */
+  /* border-radius: 16px 16px 0 0; */
+  margin-top: -50px;
+  position: relative;
+  /* overflow-y: scroll; */
+  z-index: 10;
+  /* border: 1px solid red; */
+  /* align-items: start !important; */
+}
+
+.short_body_header {
+  position: relative;
+}
+
+/* 
+.shorts_subtitle {
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 48px;
+}
+.shorts_body_text {
+  
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+} */
+
+/* ---------------- Vaccinate Poll --------------- */
+/* .vaccinate_poll_section {
+  width: 331px;
+  height: 295px;
+  background-image: linear-gradient(to bottom, #5f1296, #2b1571);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  
+  font-weight: 700;
+  padding: 10px;
+  align-self: center;
+}
+.ques {
+  
+  font-weight: 700;
+  font-size: 15px;
+}
+.poll_button {
+  width: 296px;
+  height: 60px;
+  background-color: white;
+  justify-content: flex-start !important;
+  align-self: center;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-top: 18px;
+  
+  font-weight: 700;
+  font-size: 16px;
+  color: #222222;
+}
+.poll_button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.voted_poll_section {
+  justify-content: space-between !important;
+  align-items: center;
+  margin-top: 16px;
+}
+.poll_button_voted {
+  padding-left: 5px;
+}
+.poll_voted {
+  
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  background-image: linear-gradient(to bottom, #5f1296, #2b1571);
+  height: 52px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.poll_vote_yes {
+  width: 175px;
+}
+.poll_vote_no {
+  width: 77px;
+}
+.poll_vote_not_sure {
+  width: 0px;
+}
+.poll_button_voted_not_sure {
+  
+  font-weight: 700;
+  font-size: 18px;
+  color: #571990;
+  margin-left: 8px;
+}
+.vote_percentage {
+  font-weight: 700;
+  font-size: 18px;
+  
+  color: #5f1296;
+  margin-left: 12px;
+}
+
+.like_icon {
+  width: 28px;
+  height: 22px;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+.back_button {
+  width: 52px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: 10;
+} */
+
+
+
+/* ---------------- similar blogs component -------------------- */
+.like_dislike {
+  width: 35px;
+  height: 36px;
+}
+
+.like_dislike_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* ----------- LikesShortsViews ------------------ */
+.time_shorts_views_text {
+  font-size: 12px;
+  color: white;
+
+  font-weight: 400;
+}
+
+.clock_icon_white {
+  width: 16px !important;
+  aspect-ratio: 1;
+  margin-right: 8px;
+}
+
+.shorts_icon_white {
+  width: 14px !important;
+  aspect-ratio: 0.91;
+  margin-right: 8px;
+}
+
+.views_icon_white {
+  width: 16px !important;
+  aspect-ratio: 1.2;
+  margin-right: 8px;
+}
+
+/* ------------- Footer Section ---------------------- */
+
+
+.footer_like_comment_section {
+  align-items: center;
+  background: #561990;
+  border-radius: 27px;
+  padding: 10px 12px;
+  font-size: 12px;
+  /*  */
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+
+.heart_icon {
+  width: 20px;
+  height: 19px;
+  align-self: center;
+  margin-right: 8px;
+}
+
+.comments_icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-right: 8px;
+}
+
+.share_icon {
+  width: 17px;
+  height: 19px;
+  align-self: center;
+  margin-right: 8px;
+}
+
+
+
+/* --------------------------------------- */
+@media only screen and (min-width:768px) {
+  .shorts_subtitle {
+    margin-top: 64px;
+  }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 340px) {
+  .shorts_title {
+    font-size: 18px;
+  }
+
+}
