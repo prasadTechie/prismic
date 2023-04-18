@@ -8,7 +8,7 @@ const Page = ({ page, navigation, settings }) => {
     <>
       <SliceZone slices={page.data.slices} components={components} />
       {/* <pre>{JSON.stringify(page, null, 2)}</pre> */}
-      {console.log(page.data, "blog details data")}
+      {console.log(page.data, "blog details data created")}
     </>
   );
 };
