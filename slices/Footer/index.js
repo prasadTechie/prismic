@@ -77,7 +77,6 @@ const Footer = ({ slice }) => {
 
   const handleModal = (boolean) => {
     console.log(boolean, "boolean value");
-    debugger;
     setIsModalVisible(boolean);
   };
 

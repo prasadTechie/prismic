@@ -27,7 +27,6 @@ const Home = ({ page, navigation, settings }) => {
     setActiveIndex(index);
     let allBlogPostData = page;
     let matchedTags = allBlogPostData.map((item, i) => {
-      debugger;
       // console.log(item.tags);
       return item.tags.filter((tag) => {
         if (tag === value) {

@@ -62,7 +62,7 @@ const BlogDetailWithPoll = ({ slice }) => {
     initialSlide: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: autoPlayTime,
     swipeToSlide: true,
 
@@ -187,11 +187,11 @@ const BlogDetailWithPoll = ({ slice }) => {
               <Column
                 style={{
                   padding: "0 19px",
-                  marginTop: "40px",
+                  marginTop: "50px",
                   paddingBottom: "150px",
                 }}
               >
-                <span className="shorts_subtitle">{item.title[0].text}</span>
+                {/* <span className="shorts_subtitle">{item.title[0].text}</span> */}
                 <p className="shorts_body_text">{item.paragraph[0].text}</p>
                 {console.log(item.poll_question.length)}
                 {item?.poll_question.length >= 1 ? (
