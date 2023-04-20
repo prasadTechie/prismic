@@ -138,7 +138,9 @@ const Home = ({ page, navigation, settings }) => {
                           alt={item?.primary?.clock_icon?.alt}
                           className="clock_icon"
                         />
-                        <span className="time_shorts">{5} mins</span>
+                        <span className="time_shorts">
+                          {item?.primary?.clock_count[0]?.text} mins
+                        </span>
                       </Row>
                       <Row style={{ alignItems: "center" }}>
                         <img
@@ -146,7 +148,9 @@ const Home = ({ page, navigation, settings }) => {
                           alt={item?.primary?.short_icon?.alt}
                           className="shorts_icon"
                         />
-                        <span className="time_shorts">{4} shorts</span>
+                        <span className="time_shorts">
+                          {item?.primary?.short_count[0]?.text} shorts
+                        </span>
                       </Row>
                     </Row>
                     <Column>

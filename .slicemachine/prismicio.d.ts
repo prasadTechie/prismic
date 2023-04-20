@@ -122,6 +122,16 @@ interface BlogDetailWithPollSliceDefaultPrimary {
      */
     clock_icon: prismicT.ImageField<never>;
     /**
+     * Clock Count field in *BlogDetailWithPoll → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.primary.clock_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    clock_count: prismicT.RichTextField;
+    /**
      * Short Icon field in *BlogDetailWithPoll → Primary*
      *
      * - **Field Type**: Image
@@ -132,6 +142,16 @@ interface BlogDetailWithPollSliceDefaultPrimary {
      */
     short_icon: prismicT.ImageField<never>;
     /**
+     * Short Count field in *BlogDetailWithPoll → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.primary.short_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    short_count: prismicT.RichTextField;
+    /**
      * View Count Icon field in *BlogDetailWithPoll → Primary*
      *
      * - **Field Type**: Image
@@ -141,6 +161,16 @@ interface BlogDetailWithPollSliceDefaultPrimary {
      *
      */
     view_count_icon: prismicT.ImageField<never>;
+    /**
+     * View Count field in *BlogDetailWithPoll → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.primary.view_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    view_count: prismicT.RichTextField;
     /**
      * Thumbnail Image field in *BlogDetailWithPoll → Primary*
      *
@@ -198,6 +228,16 @@ export interface BlogDetailWithPollSliceDefaultItem {
      */
     clock_icon: prismicT.ImageField<never>;
     /**
+     * Clock Count field in *BlogDetailWithPoll → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.items[].clock_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    clock_count: prismicT.RichTextField;
+    /**
      * Short icon field in *BlogDetailWithPoll → Items*
      *
      * - **Field Type**: Image
@@ -208,6 +248,16 @@ export interface BlogDetailWithPollSliceDefaultItem {
      */
     short_icon: prismicT.ImageField<never>;
     /**
+     * Shorts Count field in *BlogDetailWithPoll → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.items[].shorts_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    shorts_count: prismicT.RichTextField;
+    /**
      * view icon field in *BlogDetailWithPoll → Items*
      *
      * - **Field Type**: Image
@@ -217,6 +267,16 @@ export interface BlogDetailWithPollSliceDefaultItem {
      *
      */
     view_icon: prismicT.ImageField<never>;
+    /**
+     * View Count field in *BlogDetailWithPoll → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_detail_with_poll.items[].view_count
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    view_count: prismicT.RichTextField;
     /**
      * Title field in *BlogDetailWithPoll → Items*
      *

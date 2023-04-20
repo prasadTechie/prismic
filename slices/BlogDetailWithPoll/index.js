@@ -115,7 +115,6 @@ const BlogDetailWithPoll = ({ slice }) => {
       <Slider {...Settings} beforeChange={beforeChangeHandler}>
         {slice.items.map((item, i) => (
           <div key={i}>
-            {console.log(item, "items")}
             <img
               src={item.slider_background.url}
               alt={item.slider_background.alt}
