@@ -128,7 +128,7 @@ const BlogDetailWithPoll = ({ slice }) => {
                   className="short_body_header_img"
                 />
                 <Column style={{ padding: "0 19px" }}>
-                  <span className="shorts_title">{item.title[0].text}</span>
+                  <span className="shorts_title">{item?.title[0]?.text}</span>
                   <Row
                     style={{
                       width: "100%",
@@ -150,7 +150,9 @@ const BlogDetailWithPoll = ({ slice }) => {
                         style={{ position: "relative" }}
                         className="clock_icon_white"
                       />
-                      <span className="time_shorts_views_text">5 min</span>
+                      <span className="time_shorts_views_text">
+                        {item?.clock_count[0]?.text} min
+                      </span>
                     </Row>
                     <Row
                       style={{
@@ -164,7 +166,9 @@ const BlogDetailWithPoll = ({ slice }) => {
                         style={{ position: "relative" }}
                         className="shorts_icon_white"
                       />
-                      <span className="time_shorts_views_text">7 shorts</span>
+                      <span className="time_shorts_views_text">
+                        {item?.shorts_count[0]?.text} shorts
+                      </span>
                     </Row>
                     <Row
                       style={{
@@ -173,12 +177,14 @@ const BlogDetailWithPoll = ({ slice }) => {
                       }}
                     >
                       <img
-                        src={item.view_icon.url}
-                        alt={item.view_icon.alt}
+                        src={item?.view_icon?.url}
+                        alt={item?.view_icon?.alt}
                         style={{ position: "relative" }}
                         className="views_icon_white"
                       />
-                      <span className="time_shorts_views_text">121 views</span>
+                      <span className="time_shorts_views_text">
+                        {item?.view_count[0]?.text} views
+                      </span>
                     </Row>
                   </Row>
                 </Column>
@@ -191,7 +197,7 @@ const BlogDetailWithPoll = ({ slice }) => {
                 }}
               >
                 {/* <span className="shorts_subtitle">{item.title[0].text}</span> */}
-                <p className="shorts_body_text">{item.paragraph[0].text}</p>
+                <p className="shorts_body_text">{item?.paragraph[0]?.text}</p>
                 {console.log(item.poll_question.length)}
                 {item?.poll_question.length >= 1 ? (
                   <Column
@@ -212,19 +218,19 @@ const BlogDetailWithPoll = ({ slice }) => {
                           {pollVoted ? (
                             <Row className="poll_button_voted">
                               <Column className="poll_voted poll_vote_yes">
-                                {item.poll_question[0]?.text}
+                                {item?.poll_question[0]?.text}
                               </Column>
                               <span className="vote_percentage">
-                                {item.poll_answer[0]?.text}
+                                {item?.poll_answer[0]?.text}
                               </span>
                             </Row>
                           ) : (
                             <>
                               <img
-                                src={item.poll_question_icon.url}
-                                alt={item.poll_question_icon.alt}
+                                src={item?.poll_question_icon?.url}
+                                alt={item?.poll_question_icon.alt}
                               />{" "}
-                              <span>{item.poll_question[0]?.text}</span>
+                              <span>{item?.poll_question[0]?.text}</span>
                             </>
                           )}
                         </Row>
@@ -235,19 +241,19 @@ const BlogDetailWithPoll = ({ slice }) => {
                           {pollVoted ? (
                             <Row className="poll_button_voted">
                               <Column className="poll_voted poll_vote_no">
-                                {item.poll_question_2[0]?.text}
+                                {item?.poll_question_2[0]?.text}
                               </Column>
                               <span className="vote_percentage">
-                                {item.poll_answer_2[0]?.text}
+                                {item?.poll_answer_2[0]?.text}
                               </span>
                             </Row>
                           ) : (
                             <>
                               <img
-                                src={item.poll_question_2_icon.url}
-                                alt={item.poll_question_2_icon.alt}
+                                src={item?.poll_question_2_icon?.url}
+                                alt={item?.poll_question_2_icon?.alt}
                               />{" "}
-                              <span>{item.poll_question_2[0]?.text}</span>
+                              <span>{item?.poll_question_2[0]?.text}</span>
                             </>
                           )}
                         </Row>
@@ -261,19 +267,19 @@ const BlogDetailWithPoll = ({ slice }) => {
                                 {""}
                               </Column>
                               <span className="poll_button_voted_not_sure">
-                                {item.poll_question_3[0]?.text}
+                                {item?.poll_question_3[0]?.text}
                               </span>
                               <span className="vote_percentage">
-                                {item.poll_answer_3[0]?.text}
+                                {item?.poll_answer_3[0]?.text}
                               </span>
                             </Row>
                           ) : (
                             <>
                               <img
-                                src={item.poll_question_3_icon.url}
-                                alt={item.poll_question_3_icon.url}
+                                src={item?.poll_question_3_icon?.url}
+                                alt={item?.poll_question_3_icon?.url}
                               />{" "}
-                              <span>{item.poll_question_3[0]?.text}</span>
+                              <span>{item?.poll_question_3[0]?.text}</span>
                             </>
                           )}
                         </Row>
@@ -284,7 +290,9 @@ const BlogDetailWithPoll = ({ slice }) => {
                   ""
                 )}
                 {item?.paragraph_2.length >= 1 ? (
-                  <p className="shorts_body_text">{item.paragraph_2[0].text}</p>
+                  <p className="shorts_body_text">
+                    {item?.paragraph_2[0]?.text}
+                  </p>
                 ) : (
                   ""
                 )}
